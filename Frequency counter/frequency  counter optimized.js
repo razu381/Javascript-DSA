@@ -7,7 +7,7 @@ function checkSimillar(arr1,arr2){
     if(arr1.length != arr2.length){
         return  false
     }
-    
+
     let obj1 ={}
     let obj2 = {}
 
@@ -25,9 +25,6 @@ function checkSimillar(arr1,arr2){
             obj2[val] = 1
         }
     }
-
-    console.log(obj1)
-    console.log(obj2)
 
     for(let key in obj1){
         if(!obj2.hasOwnProperty(key**2)){
