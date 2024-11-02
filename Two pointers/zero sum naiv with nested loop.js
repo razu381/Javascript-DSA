@@ -4,12 +4,8 @@
 
 function sumZero(arr){
     for(let i= 0; i < arr.length; i++ ){
-        for(let j=0; j < arr.length; j++){
-            // console.log(arr[i],arr[j])
-            if(i == j){
-                // console.log(("simillar item found and breaking out of loop"))
-                continue
-            }else if((arr[i] + arr[j]) === 0){
+        for(let j=i+1; j < arr.length; j++){
+            if((arr[i] + arr[j]) === 0){
                 return [arr[i],arr[j]]
             } 
         }
@@ -19,4 +15,4 @@ function sumZero(arr){
 
 console.log(sumZero([-3,-2,-1,0,1,2,3])) // [-3,3]
 console.log(sumZero([-2,0,1,3])) // undefined
-console.log(sumZero([1,2,3])) // result: undefined
+console.log(sumZero([1,2,3])) //undefined
