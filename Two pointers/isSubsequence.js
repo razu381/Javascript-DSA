@@ -3,7 +3,8 @@
 // Examples: isSubsequence('hello', 'hello world'); // true
 
 function isSubsequence(str1, st2) {
-  for (let i of str1) console.log(i);
+  for (let i of str1) {
+  }
 }
 
 isSubsequence("hello", "hello world");
